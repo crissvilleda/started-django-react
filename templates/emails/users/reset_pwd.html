@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html
+    lang="en"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="x-apple-disable-message-reformatting" />
+        <title></title>
+        <style>
+            table,
+            td,
+            div,
+            h1,
+            p {
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body style="margin: 0; padding: 0">
+        <div style="padding: 30px; background: #f1f1f1">
+            <table
+                role="presentation"
+                style="
+                    width: 100%;
+                    border-collapse: collapse;
+                "
+            >
+                <tr>
+                    <td style="padding: 0; width: 50%" align="right">
+                        <img
+                            height="40"
+                            src="{{url_logo}}"
+                        ></img>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="margin: 2rem">
+            <h1
+                style="
+                    font-size: 16px;
+                    margin: 0 0 20px 0;
+                    font-family: Arial, sans-serif;
+                "
+            >
+                Hola! @{{ user.first_name }}
+            </h1>
+            <p style="font-size: 14px">
+                Ha solicitado el cambio de su contraseña, has click en el boton
+                "cambiar contraseña" para crear la nueva, si usted no ha
+                realizado esta acción, por favor ignora este mensaje. (Enlace
+                tiene una vigencia de 6 horas)
+            </p>
+            <br />
+            <p style="font-size: 14px">
+                Click en el siguiente botón para cambiar contraseña
+            </p>
+            <br />
+            <div style="display: flex; justify-content: center">
+                <code style="text-align: center; font-size: 12px"
+                    ><a
+                        style="
+                            color: #fff;
+                            background-color: #ef5543;
+                            -webkit-box-shadow: none;
+                            box-shadow: none;
+                            min-width: 15rem !important;
+                            max-height: 2.5rem !important;
+                            padding: 0.75rem 1rem !important;
+                            border-radius: 1rem !important;
+                            text-decoration: none;
+                            border: unset;
+                        "
+                        href="{{link}}"
+                        >Cambiar contraseña</a
+                    >
+                </code>
+            </div>
+        </div>
+        <div style="padding: 30px; background: #375784">
+            <table
+                role="presentation"
+                style="
+                    width: 100%;
+                    border-collapse: collapse;
+                    border: 0;
+                    border-spacing: 0;
+                    font-size: 9px;
+                    font-family: Arial, sans-serif;
+                "
+            >
+                <tr>
+                    <td style="padding: 0; width: 50%" align="left">
+                        <p
+                            style="
+                                margin: 0;
+                                font-size: 14px;
+                                line-height: 16px;
+                                font-family: Arial, sans-serif;
+                                color: #ffffff;
+                            "
+                        >
+                            2022 &reg; Todos los derechos
+                            reservados.<br />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

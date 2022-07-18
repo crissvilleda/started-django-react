@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* colors: {
+  "bg-primary":"#61256C",
+  "bg-primary-light":"#90519B",
+  "bg-primary-dark":"#340041",
+  "bg-secondary":"#BC7D2A",
+  "bg-secondary-light":"#F2AC58",
+  "bg-secondary-dark":"#875100"
+} */
+
+@layer components {
+  .btn {
+    border-radius: 0.5rem;
+    padding: 0.4rem 3rem 0.4rem 3rem;
+    font-size: 1rem;
+  }
+  .btn-primary {
+    @apply shadow-xl;
+    background-color: #61256c;
+    border: 0.15rem solid #61256c;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .btn-primary:hover {
+    @apply shadow-xl;
+    background-color: #ffffff;
+    color: #61256c;
+    border: 0.15rem solid #61256c;
+    font-weight: bold;
+  }
+  .btn-primary-light {
+    @apply shadow-xl;
+    background-color: #90519b;
+    border: 0.15rem solid #90519b;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .btn-primary-light:hover {
+    @apply shadow-xl;
+    background-color: #ffffff;
+    color: #90519b;
+    border: 0.15rem solid #90519b;
+    font-weight: bold;
+  }
+  .btn-secondary {
+    @apply shadow-xl;
+    background-color: #bc7d2a;
+    border: 0.15rem solid #bc7d2a;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .btn-secondary:hover {
+    @apply shadow-xl;
+    background-color: #ffffff;
+    color: #bc7d2a;
+    border: 0.15rem solid #bc7d2a;
+    font-weight: bold;
+  }
+  .text-title {
+    @apply text-[#BC7D2A];
+    @apply text-3xl;
+    @apply font-bold;
+  }
+}
+
+* {
+  font-family: "Roboto, Montserrat";
+}

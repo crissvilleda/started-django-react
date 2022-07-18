@@ -1,0 +1,4 @@
+from .pwd_recovery import send_mail_password_recovery
+from .pwd_temporary import send_mail_temporary_password
+from .new_user import send_mail_admins_new_user
+from .active_account import send_mail_active_account
